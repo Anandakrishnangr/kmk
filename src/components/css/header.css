@@ -1,0 +1,757 @@
+
+@media only screen and (min-device-width: 1025px) {
+
+  mainid{
+    min-width: 1025px;
+    overflow: hidden;
+  }
+
+  .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(51, 49, 49);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(27, 26, 26);
+  color: white;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+.sidebarminiheading {
+  color: #f1f1f1;
+  padding: 10px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navcont {
+  padding: 0;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 90%;
+  background: #f1f1f1;
+}
+
+form.example select {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 5%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbrandh:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.navbrandh {
+  width: 178px;
+  height: 62px;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.headersearchbox {
+  width: 1150px;
+}
+
+.navy {
+  height: 65px;
+}
+
+.nav-1 {
+  width: 9%;
+}
+
+.nav-2 {
+  width: 9%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-3 {
+  width: 69%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-4 {
+  width: 7%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-5 {
+  width: 4%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-6 {
+  width: 4%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.navmain {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.nav-1:hover, .nav-2:hover, .nav-3:hover, .nav-4:hover, .nav-5:hover, .nav-6:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.line1 {
+  font-size: .5vw;
+}
+
+.line2 {
+  font-size: .7vw;
+}
+
+.line3 {
+  font-size: .7vw;
+  float: right;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.mobilefloatnav {
+  display: none;
+}
+
+#s{
+  width: 100%;
+  height: 40px;
+  background-color:rgb(39, 36, 36);
+  overflow: hidden;
+}
+
+.secondbutton{
+  border-style: solid;
+ padding: 6px;
+ border-color: rgba(48, 42, 42, 0);
+ text-decoration: none;
+ color: white;
+ margin: 6px;
+
+}
+
+.secondbutton:hover{
+color: white;
+border-style: solid;
+border-color: white;
+border-radius: 10px;
+}
+
+
+
+
+
+.main{
+  height: 78px;
+}
+
+.realnav {
+  position: fixed;
+  margin-top: 0px;
+  min-width: 1025px;
+  overflow: hidden;
+}
+
+.mobilefloatnav2{
+  display: none;
+}
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 49, 49);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(27, 26, 26);
+    color: white;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0px;
+  }
+  
+  .sidebarminiheading {
+    color: #f1f1f1;
+    padding: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+.line1 {
+  font-size: 10px;
+}
+
+.line2 {
+  font-size: 12px;
+}
+
+.line3 {
+  font-size: 14px;
+  float: right;
+}
+
+  .mobilefloatnav2{
+    display: none;
+  }
+  .realnav {
+    display: none;
+  }
+  #s {
+    display: none;
+  }
+  .mobilenav {
+    display:inline-flex;
+   
+  }
+  .mobilefloatnav {
+    display:inline-flex;
+    width: 100%;
+  }
+  nav {
+    width: 450px;
+  }
+  body {
+    width: 450px;
+    overflow-x: hidden;
+  }
+  .navi {
+    height: 50px;
+    overflow: hidden;
+    padding: auto;
+
+  }
+  .openbtn {
+    float: left;
+    color: white;
+    background-color: rgba(240, 248, 255, 0);
+    
+  }
+  .navbrandh {
+    width: 100%;
+    overflow: hidden;  
+    height: 40px;
+  }
+  .nav-4 {
+    width: 40%;
+   
+    height: 40px;
+    text-align: center;
+     
+  }
+  .nav-6 {
+    width: 25%;    
+    height: 40px;   
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+  
+  .line1{
+  
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-3 {
+    width: 100%;   
+    height: 40px;
+  }
+  .navis{
+    height: 40px;
+    margin-top: 0px;
+    padding: 5px;
+  }
+  
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.example select {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 15%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.mainid{
+  padding: 0px 0px 0px 0px;
+   height: 110px;
+
+}
+
+
+
+ .nav-3:hover{
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.nav-3-float{
+  width: 100%;
+  height: 40px;
+}
+
+
+form.examplee input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 55%;
+  background: #f1f1f1;
+}
+
+
+form.examplee button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.main{
+  display: none;
+}
+
+/*  */
+}
+
+@media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
+
+  html{
+    min-width: 900px;
+  }
+.main{
+  height: 100px;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(51, 49, 49);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(27, 26, 26);
+  color: white;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+.sidebarminiheading {
+  color: #f1f1f1;
+  padding: 10px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navcont {
+  padding: 0;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.example select {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 15%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbrandh:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.navbrandh {
+  padding: 0px;
+  margin: 0px;
+  width: 138px;
+  height: 62px;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.headersearchbox {
+  width: 1000px;
+}
+
+.navy {
+  height: 65px;
+  
+}
+
+.nav-1 {
+  width: 20%;
+  overflow: hidden;
+  height: 50px;
+}
+
+.nav-2 {
+  width: 16%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+  height: 50px;
+  
+}
+
+.nav-3 {
+  height: 50px;
+  width: 45%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-4 {
+  height: 50px;
+  width: 16%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-5 {
+  height: 50px;
+  width: 12%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+}
+
+.nav-6 {
+  height: 50px;
+  width: 12%;
+  border-style: solid;
+  border-color: rgba(27, 25, 25, 0);
+  
+}
+
+.navmain {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.nav-1:hover, .nav-2:hover, .nav-3:hover, .nav-4:hover, .nav-5:hover, .nav-6:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.line1 {
+  font-size: 10px;
+}
+
+.line2 {
+  font-size: 12px;
+}
+
+.line3 {
+  font-size: 11px;
+  float: right;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.mobilefloatnav {
+  display: none;
+}
+
+#s{
+  width: 100%;
+  height: 40px;
+  background-color:rgb(39, 36, 36);
+  overflow: hidden;
+}
+
+.secondbutton{
+  border-style: solid;
+ padding: 6px;
+ border-color: rgba(48, 42, 42, 0);
+ text-decoration: none;
+ color: white;
+ margin: 6px;
+
+}
+
+.secondbutton:hover{
+color: white;
+border-style: solid;
+border-color: white;
+border-radius: 10px;
+}
+
+
+
+
+.main{
+  height: 69px;
+}
+
+
+.realnav {
+  position: fixed;;
+  margin-top: 0px;
+  padding: 0px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.mobilefloatnav2{
+  display: none;
+}
+}
