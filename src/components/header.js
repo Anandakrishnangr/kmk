@@ -111,8 +111,9 @@ class Header extends Component {
     // const inputbox = "max-width:300px";
     return (
       <div className="allheader">
+        <div class="sidebarcontainer">
         <div id="mySidebar" className="sidebar">
-          <a href="javascript:void(0)" id="cls" className="closebtn" onClick={() => this.closeNav()}>X</a>
+          <a href="javascript:void(0)" id="cls" className="closebtn" onClick={() => this.closeNav()}>x</a>
           {/* fix me ^ */}
           <div className="sidebarminiheading">Trending Content</div>
           <a href="about.html">About</a>
@@ -126,7 +127,10 @@ class Header extends Component {
           <a href="sd.html">Movers and Shakes</a>
 
         </div>
+        <div class="sidebarcontainerleft" onClick={() => this.closeNav()}>
 
+        </div>
+        </div>
 
         <div id="main" className="mainid bg-dark">
           {/* nav start */}
