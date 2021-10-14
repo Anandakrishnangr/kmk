@@ -60,42 +60,42 @@ class Header extends Component {
     // }
 
     // })
- 
+
 
     var lastScrolTop = 0;
     var navbar = document.getElementById("mobilefloatnav2");
     var realnavbar = document.getElementById("mobilefloatnav");
-    var mainid  = document.getElementById("mainid");
+    var mainid = document.getElementById("mainid");
     var main = document.getElementById("main");
     window.addEventListener("scroll", function () {
 
-      if(window.innerWidth<480){
-      var scrollTop = window.pageYoffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrolTop) {
+      if (window.innerWidth < 480) {
+        var scrollTop = window.pageYoffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrolTop) {
 
-        navbar.style.display = "block";
-        realnavbar.style.display = "none";
-        navbar.style.top = "0px";
-        navbar.style.position = "fixed";
-        // main.style.backgroundColor="transparent";
-        main.style.height="10px";
+          navbar.style.display = "block";
+          realnavbar.style.display = "none";
+          navbar.style.top = "0px";
+          navbar.style.position = "fixed";
+          // main.style.backgroundColor="transparent";
+          main.style.height = "10px";
 
+        }
+        else {
+          main.style.height = "100px";
+          // main.style.backgroundColor="dark";
+          navbar.style.display = "none";
+          realnavbar.style.display = "block";
+
+        }
       }
       else {
-        main.style.height="100px";
-        // main.style.backgroundColor="dark";
         navbar.style.display = "none";
-        realnavbar.style.display = "block";
-
       }
-    }
-    else{
-      navbar.style.display = "none";
-    }
     })
 
 
-  
+
   }
 
 
@@ -136,29 +136,30 @@ class Header extends Component {
             {/* realnav */}
 
             <div id="navbar" className="realnav w-100">
-              <Navbar className="p-0 my-0 navi " bg="dark" variant="dark">
-                <Navbar.Brand href="#home" className="navbrandh nav-1 p-1 m-1 p-0 m-0"><img src={logo} alt="logo" height="30px" width="130px"></img></Navbar.Brand>
+              <Navbar id="navii" className=" navi " bg="dark" variant="dark">
+                <Navbar.Brand id="navite" href="#home" className="navbrandh nav-1 "><img src={logo} alt="logo" height="30px" width="130px"></img></Navbar.Brand>
 
                 <Nav className="w-100 ">
-                  <Nav.Link href="#home" className="navbrandh p-1 m-2 nav-2">
+                  <Nav.Link id="navite" href="#home" className="navbrandh nav-2">
                     Hello user<br /><i className="fa fa-map-marker" aria-hidden="true"></i><div className="line3">Select your address</div>
                   </Nav.Link>
-                  <Nav.Link className="m-2 m-0 p-1 p-0 headersearchbox nav-3" href="#home">
-                    <form className="example" action="/action_page.php" >
+                  <Nav.Link id="navite" className="headersearchbox nav-3" href="#home">
+                    <form id="theform" className="example" action="/action_page.php" >
                       <select className="form-control">
                         <option>All</option>
                       </select>
                       <input type="text" className=" w-6 form-control " placeholder="Search.." name="search2"></input>
-                      <button type="submit"><i className="fa fa-search "></i></button>
+                      <button type="btn submit"><i className="fa fa-search "></i></button>
                     </form>
                   </Nav.Link>
-                  <Nav.Link className="m-3 p-1 nav-4" href="#features"><div className="line1">Hello, Sign in</div><div className="line2">Account & Links</div>
+                  <Nav.Link id="navite" className=" nav-4" href="#features"><div className="line1">Hello, Sign in</div><div className="line2">Account & Links</div>
 
                   </Nav.Link>
-                  <Nav.Link className="m-3 p-1 nav-5" href="#pricing"><div className="line1">Returns &</div><div className="line2">
+                  <Nav.Link id="navite" className="nav-5" href="#pricing"><div className="line1">Returns &</div><div className="line2">
 
-                    Orders</div></Nav.Link>
-                  <Nav.Link className="m-3 p-1 nav-6" href="#pricing"><i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>Cart</Nav.Link>
+                    Orders</div>
+                  </Nav.Link>
+                  <Nav.Link id="navite" className="nav-6" href="#pricing"><i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>Cart</Nav.Link>
                 </Nav>
               </Navbar>
             </div>
@@ -203,7 +204,7 @@ class Header extends Component {
                 <Nav className="w-100 m-0">
                   <Nav.Link className="m-0 p-0  nav-3-float" href="#home">
                     <form className="examplee" action="/action_page.php" >
-                    <button id="doit" type="button" className="openbtn" onClick={() => this.openNav1()}>☰</button>
+                      <button id="doit" type="button" className="openbtn" onClick={() => this.openNav1()}>☰</button>
                       <input type="text" className=" w-4 form-control " placeholder="Search.." name="search2"></input>
                       <button type="submit"><i className="fa fa-search "></i></button>
                       <button className="opnbtn nav-6-float" href="#pricing"><i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></button>

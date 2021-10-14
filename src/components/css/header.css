@@ -1,11 +1,17 @@
 
+
 @media only screen and (min-device-width: 1025px) {
 
-  mainid{
-    min-width: 1025px;
+  .mainid,.main,.content,#navbar,#s{
+    min-width: 1400px;
     overflow: hidden;
   }
-
+  #navii{
+    padding: 5px;
+  }
+  #navite{
+    margin: auto;
+  }
   .sidebar {
   height: 100%;
   width: 0;
@@ -141,7 +147,8 @@ form.example::after {
 .nav-2 {
   width: 9%;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
+  min-width: 117px;
   text-overflow: ellipsis;
 }
 
@@ -153,18 +160,21 @@ form.example::after {
 
 .nav-4 {
   width: 7%;
+  min-width: 95px;
   border-style: solid;
   border-color: rgba(27, 25, 25, 0);
 }
 
 .nav-5 {
   width: 4%;
+  min-width: 75px;
   border-style: solid;
   border-color: rgba(27, 25, 25, 0);
 }
 
 .nav-6 {
   width: 4%;
+  min-width: 88px;
   border-style: solid;
   border-color: rgba(27, 25, 25, 0);
 }
@@ -181,15 +191,15 @@ form.example::after {
 }
 
 .line1 {
-  font-size: .5vw;
+  font-size: 10px;
 }
 
 .line2 {
-  font-size: .7vw;
+  font-size: 10px;
 }
 
 .line3 {
-  font-size: .7vw;
+  font-size: 10px;
   float: right;
 }
 
@@ -238,6 +248,7 @@ border-radius: 10px;
   margin-top: 0px;
   min-width: 1025px;
   overflow: hidden;
+  
 }
 
 .mobilefloatnav2{
@@ -495,9 +506,7 @@ form.examplee button {
 
 @media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
 
-  html{
-    min-width: 900px;
-  }
+
 .main{
   height: 100px;
   overflow: hidden;
@@ -570,9 +579,12 @@ form.examplee button {
 .navcont {
   padding: 0;
 }
-
+#navite{
+  margin-top: 0px;
+  padding: 0px;
+}
 form.example input[type=text] {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 17px;
   border: 1px solid grey;
   float: left;
@@ -581,7 +593,7 @@ form.example input[type=text] {
 }
 
 form.example select {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 17px;
   border: 1px solid grey;
   float: left;
@@ -592,10 +604,10 @@ form.example select {
 form.example button {
   float: left;
   width: 15%;
-  padding: 10px;
+  height: 40px;
   background: #2196F3;
   color: white;
-  font-size: 17px;
+  font-size: 19px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
@@ -647,10 +659,12 @@ form.example::after {
   text-overflow: ellipsis;
   margin: 0px;
   height: 50px;
+  padding: 0px;
   
 }
 
 .nav-3 {
+  padding: 0px; 
   height: 50px;
   width: 45%;
   border-style: solid;
@@ -739,7 +753,7 @@ border-radius: 10px;
 
 
 .main{
-  height: 69px;
+  height: 65px;
 }
 
 
@@ -754,4 +768,5 @@ border-radius: 10px;
 .mobilefloatnav2{
   display: none;
 }
+
 }
