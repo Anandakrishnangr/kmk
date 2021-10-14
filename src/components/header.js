@@ -223,7 +223,7 @@ class Header extends Component {
         </div>
         <div className="main"></div>
         <div id="s">
-          <button id="doit" className="openbtn" onClick={() => this.openNav()}>☰</button>
+          <button id="doit" className="openbtn" onClick={() => this.openNav1()}>☰</button>
           <a href="des" className="secondbutton ">Cars</a>
           <a href="des" className="secondbutton ">Bikes</a>
           <a href="des" className="secondbutton ">Tyres</a>
