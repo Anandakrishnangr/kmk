@@ -1,0 +1,68 @@
+
+
+@media only screen and (min-device-width: 450px){
+.thumby{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 1;
+    top: 150px;
+  }
+
+  .productview{
+    padding: auto;
+    overflow-x: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+ }
+
+}
+
+.productview{
+    padding: auto;
+    overflow-x: hidden;
+  
+ }
+
+ 
+span.checked {
+    color: orange;
+  }
+.kmkchoice{
+    background-color: black;
+  padding: 4px 4px 4px 4px;
+
+    width: fit-content;
+}
+
+.tabledef{
+ float: right;
+}
+.icothumb{
+    width: 40px;
+    height:40px;
+    
+}
+
+#instock{
+    color: rgba(128, 255, 0, 0.685);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#outstock{
+    color: rgb(165, 26, 16);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.sizecol{
+    border: coral;
+}
+
+
+

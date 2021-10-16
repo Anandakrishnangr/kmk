@@ -111,7 +111,7 @@ class Header extends Component {
     // const inputbox = "max-width:300px";
     return (
       <div className="allheader">
-        <div class="sidebarcontainer">
+        <div className="sidebarcontainer">
         <div id="mySidebar" className="sidebar">
           <a href="javascript:void(0)" id="cls" className="closebtn" onClick={() => this.closeNav()}>x</a>
           {/* fix me ^ */}
@@ -127,7 +127,7 @@ class Header extends Component {
           <a href="sd.html">Movers and Shakes</a>
 
         </div>
-        <div class="sidebarcontainerleft" onClick={() => this.closeNav()}>
+        <div className="sidebarcontainerleft" onClick={() => this.closeNav()}>
 
         </div>
         </div>
@@ -241,10 +241,8 @@ class Header extends Component {
           <a href="des" className="secondbutton ">Mirror</a>
         </div>
 
-        <div className="content">
-          {this.result ? <h3>Sticky Navigation Example</h3> : <h3>Sticky Navigation ssExampleSticky Navigation Example</h3>}
-        </div>
-        <div className="content">
+        {/* s */}
+        {/* <div className="content">
           <h3>Sticky Navigation Example</h3>
           <p>The navbar will stick to the top when you reach its scroll position.</p>
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
@@ -265,7 +263,7 @@ class Header extends Component {
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </div>
+        </div> */}
       </div>
 
     )
