@@ -18,9 +18,11 @@ function Theproductview() {
         <div className="container-fluid  productview">
             <div className="container-fluid row  border bg-dark text-light mx-0">here go the location path</div>
             <div className="container-fluid row  border bg-primary mx-0">
-                <div className="container-fluid col-12 col-xl-6 ">
-                    <img className="border img-thumbnail thumby" src={img}></img>
+               
+                <div className="container-fluid col-12 col-xl-6 h-100">
+                    <img className="border img-thumbnail thumby" src={img} alt="Product image"></img>
                 </div>
+               
                 <div className="container col-12 col-xl-6">
                     <h4 className="head">
                         Lenovo IdeaPad Gaming 3 AMD Ryzen 5 4600H 15.6" (39.63cm) FHD IPS Gaming Laptop
@@ -42,16 +44,16 @@ function Theproductview() {
 
                     <hr />
                     <div className="row">
-                        <div className="col-5">
+                        <div className="col-md-6 col-xl-5">
                             <table className="table table-borderless ">
                                 <tbody>
                                     <tr>
                                         <td className="tabledef fw-lighter fs-6" scope="row">M.R.P:</td>
-                                        <td>8000</td>
+                                        <td><strike>10000</strike></td>
                                     </tr>
                                     <tr>
                                         <td className="tabledef fw-lighter fs-6" scope="row">Deal of the Day:</td>
-                                        <td className="text-danger">$3000</td>
+                                        <td className="text-danger">$5000</td>
 
                                     </tr>
                                     <tr>
@@ -115,7 +117,7 @@ function Theproductview() {
                     </div>
                     <div>
                         Size
-                        <div className="p-1 gx-7">
+                        <div className="p-1 g-7">
                             <a className="btn btn-outline-danger">S</a>
                             <a className="btn btn-outline-danger">M</a>
                             <a className="btn btn-outline-danger">L</a>
@@ -125,13 +127,81 @@ function Theproductview() {
 
                         </div>
                     </div>
+                    <hr />
+                    {/* model details */}
+
+                    <div className="row">
+                        <div className="col-xl-5 ">
+                            <table className="table table-borderless ">
+                                <tbody>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Model Name</td>
+                                        <td>Ideapad</td>
+                                    </tr>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Brand</td>
+                                        <td className="fs-6r">Lenovo</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Specific use for</td>
+                                        <td className="fs-6">light use</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Model Name</td>
+                                        <td>Ideapad</td>
+                                    </tr>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Brand</td>
+                                        <td className="fs-6">Lenovo</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td className=" fw-lighter fs-6" scope="row">Specific use for</td>
+                                        <td className="fs-6">light use</td>
+
+                                    </tr>
+
+                                    {/* <tr>
+                                        <td scope="row"></td>
+                                        <td>Inclusive of all taxes</td>
+
+                                    </tr> */}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/*end model details */}
+                    <hr />
+                    {/* about the product */}
+<div >
+<h5>About this product</h5>
+<ul>
+    <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+</ul>
+</div>
+{/* end of about the product */}
 
 
 
-
-
-
-
+                    {/*  */}
                 </div>
             </div>
             <div className="container row  border">

@@ -4,11 +4,11 @@
 .thumby{
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    padding: 5px;
+   
+    /* padding: 5px; */
     background-color: #cae8ca;
-    border: 2px solid #4CAF50;
-    z-index: 1;
+    /* border: 2px solid #4CAF50; */
+    z-index: 100;
     top: 150px;
   }
 
@@ -64,5 +64,12 @@ span.checked {
     border: coral;
 }
 
+
+/* 
+@media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
+
+{
+
+} */
 
 
