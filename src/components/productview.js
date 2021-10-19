@@ -17,13 +17,12 @@ function Theproductview() {
     return (
         <div className="container-fluid  productview">
             <div className="container-fluid row  border bg-dark text-light mx-0">here go the location path</div>
-            <div className="container-fluid row  border bg-primary mx-0">
-               
-                <div className="container-fluid col-12 col-xl-6 h-100">
-                    <img className="border img-thumbnail thumby" src={img} alt="Product image"></img>
+            <div className="container-fluid row  border bg-primary mx-0 py-4">
+                <div className="container col-12 col-xl-5 ">
+                    <img className="border img-thumbnail thumby" src={img}></img>
                 </div>
-               
-                <div className="container col-12 col-xl-6">
+
+                <div className="container col-12 col-xl-5 py-4">
                     <h4 className="head">
                         Lenovo IdeaPad Gaming 3 AMD Ryzen 5 4600H 15.6" (39.63cm) FHD IPS Gaming Laptop
                         (8GB/512GB SSD/Windows10/NVIDIA GTX 1650 4GB/120Hz Refresh Display/Onyx Black/2.2Kg),
@@ -44,16 +43,16 @@ function Theproductview() {
 
                     <hr />
                     <div className="row">
-                        <div className="col-md-6 col-xl-5">
+                        <div className="col-xl-5">
                             <table className="table table-borderless ">
                                 <tbody>
                                     <tr>
                                         <td className="tabledef fw-lighter fs-6" scope="row">M.R.P:</td>
-                                        <td><strike>10000</strike></td>
+                                        <td>8000</td>
                                     </tr>
                                     <tr>
                                         <td className="tabledef fw-lighter fs-6" scope="row">Deal of the Day:</td>
-                                        <td className="text-danger">$5000</td>
+                                        <td className="text-danger">$3000</td>
 
                                     </tr>
                                     <tr>
@@ -91,9 +90,9 @@ function Theproductview() {
 
                     <hr />
                     <div className="row">
-                        <div className="col-3 text-center"> <img className="icothumb" src={cash} /><br />pay on delivery </div>
+                        <div className="col-3 text-center"> <img className="icothumb" src={cash} /><br />Pay on delivery </div>
                         <div className="col-3 text-center"> <img className="icothumb" src={guarantee} /><br />10 days replacement</div>
-                        <div className="col-3 text-center"> <img className="icothumb" src={truck} /><br />kmk delivered </div>
+                        <div className="col-3 text-center"> <img className="icothumb" src={truck} /><br />KMK delivered </div>
                         <div className="col-3 text-center"> <img className="icothumb" src={ret} /><br />1 year warrenty</div>
                     </div>
                     <hr />
@@ -117,7 +116,7 @@ function Theproductview() {
                     </div>
                     <div>
                         Size
-                        <div className="p-1 g-7">
+                        <div className="p-1 gx-7">
                             <a className="btn btn-outline-danger">S</a>
                             <a className="btn btn-outline-danger">M</a>
                             <a className="btn btn-outline-danger">L</a>
@@ -131,7 +130,7 @@ function Theproductview() {
                     {/* model details */}
 
                     <div className="row">
-                        <div className="col-xl-5 ">
+                        <div className="col-xl-5 col-sm-12">
                             <table className="table table-borderless ">
                                 <tbody>
                                     <tr>
@@ -176,32 +175,97 @@ function Theproductview() {
                     {/*end model details */}
                     <hr />
                     {/* about the product */}
-<div >
-<h5>About this product</h5>
-<ul>
-    <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-        <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
-        late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
-</ul>
-</div>
-{/* end of about the product */}
+                    <div >
+                        <h5>About this product</h5>
+                        <ul>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                            <li>Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered
+                                late 2021 into 2022. Specific timing varies by device. Certain features require specific hardware.</li>
+                        </ul>
+                    </div>
+                    {/* end of about the product */}
 
 
 
-                    {/*  */}
+
+                </div>
+
+                {/*  3rd col */}
+
+                <div className="container  gx-5  col-12 col-xl-2 border py-4">
+
+                    {/* offer */}
+
+                    <h6>Without Exchange</h6>
+                    <div className="row">
+                        <div className="col text-danger">2000$</div>   <div className="col "><strike>3400$</strike></div>
+                    </div>
+
+                    {/* Product */}
+
+                    <div>
+                        <h5 className="head">
+                            Lenovo IdeaPad Gaming 3 AMD Ryzen 5 4600H 15.6" (39.63cm) FHD IPS Gaming Laptop
+                            (8GB/512GB SSD/Windows10/NVIDIA GTX 1650 4GB/120Hz Refresh Display/Onyx Black/2.2Kg),
+                            x82EY00UAIN + Xbox Game Pass for PC
+                        </h5>
+                    </div>
+                    {/* select quantity */}
+
+                    <div className="row">
+                        <div className="col ">Quantity  <input className="form-control quanty" type='number' min="1" max="12"></input></div>
+                    </div>
+
+                    {/* buy and addtocart buttons */}
+
+                    <div className="row">
+                        <div className=" "><input className="btn btn-warning shadow  addtocart" type="button" value="Add to cart"></input></div>
+                        <div className=" "><input className="btn   buy" type="button" value="Buy now"></input></div>
+                        <div className=" my-2">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"></input>&nbsp;
+                            <label className="form-check-label" for="flexCheckDefault">
+                                Add gift option
+                            </label>
+                        </div>
+                    </div>
+
+                    {/* wishlist */}
+
+                    <div><button className="btn wishlistbutton ">Add to wishlist</button></div>
+                </div>
+            </div>
+
+            {/* frequent */}
+
+            <div className="container-fluid row  border bg-primary mx-0">
+                <h4>Frequently brought together</h4>
+
+                <div className="row col-6">
+                    <div className="col thumbcol">
+                        <img className="thumbnailcustomsmall" src={img}></img>
+                    </div>
+                    <div className="col thumbcol">
+                        <img className="thumbnailcustomsmall" src={img}></img>
+                    </div>
+                    <div className="col thumbcol">
+                        <img className="thumbnailcustomsmall" src={img}></img>
+                    </div>
+                    <div className="col thumbcol my-5">
+                        <button className="addtocart btn btn-warning frequentbutton">Add all 3 to cart</button>
+                    </div>
                 </div>
             </div>
             <div className="container row  border">
@@ -226,6 +290,8 @@ function Theproductview() {
                     Nam fermentum, lectus at finibus mollis, arcu dui suscipit diam, quis facilisis mi ipsum at dui. Suspendisse nec ullamcorper ipsum, ut placerat massa. Donec at nibh dui. Curabitur mollis elit purus, nec rutrum felis volutpat a. Sed rhoncus gravida massa, non facilisis magna congue sed. Nunc mollis dictum erat, vel interdum nulla. Vivamus iaculis eros eu enim interdum, in venenatis eros molestie. Vivamus et augue arcu. Sed quis nunc tortor.
                 </div>
             </div>
+
+
         </div>
     )
 }
