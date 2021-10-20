@@ -1,0 +1,9 @@
+#signlink{
+    text-decoration: none;
+    /* background-color: aqua; */
+}
+.hrr{
+    height: 10spx;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right,white,black, white);
+}

@@ -7,7 +7,7 @@ function Searchresult() {
 
     return (
         <div className="sear">
-            <div className="container-fluid row border pt-5 mx-0">
+            <div className="container-fluid row border pt-5 mx-0 mobdo">
                 <div className="container-fluid p-0 col-xl-2 col-md-2 border sidefilter ">
                     <h6 className="mt-3 ms-2">Department</h6>
                     <div>
