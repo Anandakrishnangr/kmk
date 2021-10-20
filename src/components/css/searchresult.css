@@ -1,0 +1,139 @@
+@media only screen and (min-device-width: 1025px) {
+  .sear {
+    /* padding: auto; */
+    /* overflow-x: hidden; */
+    padding-left: 150px;
+    padding-right: 150px;
+   
+  }
+  .pricein {
+    font-size: 20px;
+  }
+  .priceout {
+    font-size: 16px;
+  }
+  .captionser {
+    max-height: 54px;
+    overflow: hidden;
+    display: block;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  }
+
+  #sthumb{
+    height: 300px;
+    width: 300px;
+  }
+  .imgcontainer{
+    padding-top:30px;
+  }
+  
+  .customcard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5px;
+    
+  }
+  .customcard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .sidefilter{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  .sidefilter:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .sidelinker:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+@media only screen and (max-device-width: 450px) {
+
+  .sidefilter{
+    display: none;
+  }
+  #sthumb{
+    height: 170px;
+    width: 130px;
+  }
+
+  .captionser {
+    max-height: 65px;
+    overflow: hidden;
+    /* display: block; */
+    font-size: .84em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  .pricein {
+    font-size: 20px;
+  }
+  .priceout {
+    font-size: 16px;
+  }
+  .misdetails{
+    font-size: 12px;
+  }
+  .customcard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5px;
+    
+  }
+  .customcard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+}
+
+@media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
+  
+.captionser {
+  max-height: 72px;
+  overflow: hidden;
+  display: block;
+  font-size: .93em;
+  margin-top: 0.01em;
+  margin-bottom: 0.01em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+.imgcontainer{
+  padding-top:25px;
+}
+
+
+}
+
+/* all */
+#sthumb{
+  height: 300px;
+  width: 300px;
+}
+
+.minmax::-webkit-outer-spin-button, .minmax::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+.minmax {
+  -moz-appearance: textfield;
+}
+
+
+
+/* end of all */
+
