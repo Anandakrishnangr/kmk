@@ -9,7 +9,7 @@ function Signup() {
 
     return (
         <div>
-            <div className="container   col-12 col-md-6  col-xl-6">
+            <div className="container mt-4   col-12 col-md-6  col-xl-6">
                 <div className="container mt-2 col-12 col-md-6  col-xl-6">
                     <center>  <img src={logo}></img></center>
                 </div>

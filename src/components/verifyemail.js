@@ -9,66 +9,46 @@ function Verifyemail() {
 
     return (
         <div>
-            <div className="container   col-12 col-md-6  col-xl-6">
+            <div className="container mt-4   col-12 col-md-6  col-xl-6">
                 <div className="container mt-2 col-12 col-md-6  col-xl-6">
                     <center>  <img src={logo}></img></center>
                 </div>
-                {/* <div class="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
+                {/* <div className="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
                     Message
                 </div> */}
-                <div className="container p-4 border col-12 col-md-6 card">
+                <div className="container card p-4 border col-12 col-md-6 card">
                     <form className="justify-content-center w-100">
-                        <h3>Create account</h3>
+                        <h3>Verify email address</h3>
                         <div>
-                            Your name<br></br>
+                            To verify your email, we've sent a One Time Password (OTP) to granandakrishan@gmail.com
+                            <a id="signlink">(Change)</a>
+                        </div>
+                        <div>
+                            Enter OTP<br></br>
                             <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-danger" aria-hidden="true"></i></span>
+                            <span className="ms-1 h-15"><i className="fa fa-info text-danger" aria-hidden="true"></i> </span>
 
                         </div>
-                        <div>
-                            Email or mobile number<br></br>
-                            <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-danger" aria-hidden="true"></i> </span>
 
-                        </div>
-                        <div>
-                            Password<br></br>
-                            <input className="form-control" placeholder="At least 6 characters" type="text" name="usname"></input>
-                            <span className="ms-1 h-15 text-info"><i class="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
-                        </div>
-                        <div>
-                            Password again<br></br>
-                            <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
+                        <input className="btn mt-3 btn-warning form-control" value="Verify"></input>
+                        <input className="btn mt-3  form-control" value="Resend OTP"></input>
 
+                        <div className="d-none">
+                            <p className="mt-2 fs-6"> Note: If you didn't receive our verification email:</p>
+                                <ul>
+                                    <li>  Confirm that your email address was entered correctly above.</li>
+                                    <li>    Check your spam or junk e-mail folder.</li>
+                                </ul>
+                            
                         </div>
-                        <input className="btn mt-3 btn-warning form-control" value="Continue"></input>
-                        <p className="mt-2 fs-6"> By creating an account or logging in, you agree to KMK's Conditions of Use and Privacy Policy.</p>
-
                         <hr className="hrr mt-5" />
 
 
-                        Already have an account? <a id="signlink" href="">Sign in </a>
+                        <center>   Already have an account? <a id="signlink" href="">Sign in </a></center>
 
                     </form>
                 </div>
-                <div className="mt-2  container p-4 border col-12 col-md-6">
 
-                    <div className="row ">
-                        <div className="col-3 col-xl-4">
-                            <hr />
-                        </div>
-                        <div className="col-6 col-xl-4 text-center">
-                            New to KMKautomobiles
-                        </div>
-                        <div className="col-3 col-xl-4">
-                            <hr />
-                        </div>
-                    </div>
-                    <div>
-                        <button className="mt-3 btn btn-outline-secondary w-100 ">Create your Account</button>
-                    </div>
-                </div>
 
             </div>
 
