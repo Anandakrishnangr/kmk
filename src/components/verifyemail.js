@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
 
-function Signup() {
+function Verifyemail() {
 
     return (
         <div>
@@ -88,4 +88,4 @@ function Signup() {
         </div>
     )
 }
-export default Signup
+export default Verifyemail
