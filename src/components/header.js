@@ -112,24 +112,24 @@ class Header extends Component {
     return (
       <div className="allheader">
         <div className="sidebarcontainer">
-        <div id="mySidebar" className="sidebar">
-          <a href="javascript:void(0)" id="cls" className="closebtn" onClick={() => this.closeNav()}>x</a>
-          {/* fix me ^ */}
-          <div className="sidebarminiheading">Trending Content</div>
-          <a href="about.html">About</a>
-          <a href="sd.html">Best Sellers</a>
-          <a href="sd.html">New Releases</a>
-          <a href="sd.html">Movers and Shakers</a>
-          <div className="sidebarminiheading">Digital os here Content</div>
-          <a href="about.html">Alexa</a>
-          <a href="sd.html">Prime</a>
-          <a href="sd.html">New Releases</a>
-          <a href="sd.html">Movers and Shakes</a>
+          <div id="mySidebar" className="sidebar">
+            <a href="javascript:void(0)" id="cls" className="closebtn" onClick={() => this.closeNav()}>x</a>
+            {/* fix me ^ */}
+            <div className="sidebarminiheading">Trending Content</div>
+            <a href="about.html">About</a>
+            <a href="sd.html">Best Sellers</a>
+            <a href="sd.html">New Releases</a>
+            <a href="sd.html">Movers and Shakers</a>
+            <div className="sidebarminiheading">Digital os here Content</div>
+            <a href="about.html">Alexa</a>
+            <a href="sd.html">Prime</a>
+            <a href="sd.html">New Releases</a>
+            <a href="sd.html">Movers and Shakes</a>
 
-        </div>
-        <div className="sidebarcontainerleft" onClick={() => this.closeNav()}>
+          </div>
+          <div className="sidebarcontainerleft" onClick={() => this.closeNav()}>
 
-        </div>
+          </div>
         </div>
 
         <div id="main" className="mainid bg-dark">
@@ -211,7 +211,9 @@ class Header extends Component {
                       <button id="doit" type="button" className="openbtn" onClick={() => this.openNav1()}>☰</button>
                       <input type="text" className=" w-4 form-control " placeholder="Search.." name="search2"></input>
                       <button type="submit"><i className="fa fa-search "></i></button>
-                      <button className="opnbtn nav-6-float" href="#pricing"><i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></button>
+                      <button className="opnbtn nav-6-float" href="#pricing">
+                        <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                      </button>
 
                     </form>
                   </Nav.Link>

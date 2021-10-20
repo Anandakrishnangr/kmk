@@ -4,17 +4,17 @@
 .thumby{
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top:60px;
     padding: 5px;
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
-    z-index: 1;
-    top: 150px;
+    z-index: 9998;
+    
   }
 
   .productview{
     padding: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-left: 100px;
     padding-right: 100px;
  }
@@ -23,7 +23,7 @@
 
 .productview{
     padding: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   
  }
 
@@ -64,5 +64,48 @@ span.checked {
     border: coral;
 }
 
+.buy{
+    background-color: rgb(230, 133, 7);
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 30px;
+}
+.addtocart{
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.checkbo{
+    width: 2px  ;
+}
+.quanty{
+    width: 60px;
+}
+
+.wishlistbutton{
+    width: 100%;
+    border-radius: 4px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.frequentbutton{
+    height: 40px;
+    width: fit-content;
+    font-size:10px;
+    padding: auto;
+    margin: 0px;
+}
+.thumbnailcustomsmall{
+width: 160px;
+height: 160px;
+background-color: brown;
+}
+/* 
+@media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
+
+{
+
+} */
 
 
