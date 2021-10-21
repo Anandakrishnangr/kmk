@@ -8,7 +8,7 @@ import logo from './img/logo.png'
 import 'font-awesome/css/font-awesome.min.css';
 import { WindowSidebar } from 'react-bootstrap-icons';
 import {  UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
-
+import {Link, useHistory} from 'react-router-dom'
 
 
 
@@ -164,7 +164,7 @@ class Header extends Component {
 
             <div id="navbar" className="realnav w-100">
               <Navbar id="navii" className=" navi " bg="dark" variant="dark">
-                <Navbar.Brand id="navite" href="#home" className="navbrandh nav-1 "><img src={logo} alt="logo" height="30px" width="130px"></img></Navbar.Brand>
+                <Navbar.Brand  id="navite"  className="navbrandh nav-1 "><Link to="/products"><img src={logo} alt="logo" height="30px" width="130px"></img></Link></Navbar.Brand>
 
                 <Nav className="w-100 ">
                   <Nav.Link id="navite" href="#home" className="navbrandh nav-2">
@@ -269,18 +269,18 @@ class Header extends Component {
         </div>
        
         <div style={{opo}}>
-        <UncontrolledPopover size="4" id="accpop"  delay="3" fade="true" popperClassName="opo" trigger="legacy hover" placement="bottom" target="Popover1">
+        <UncontrolledPopover id="accpop" popperClassName="opo" trigger="legacy hover" placement="bottom" target="Popover1">
         <PopoverHeader>
           <div>
-            <a className="btn btn-warning w-100">Sign in</a>
-            New customer start <a href="">here</a>
+            <Link to='/signin' className="btn btn-warning w-100">Sign in</Link>
+            New customer start <Link to="/signup">here</Link>
           </div>
         </PopoverHeader>
         <PopoverBody >
       <div id="accpop" className="container ">
         <div><h6>Your Account</h6> </div>
         <hr className="mt-1"/>
-        <a className="btn w-100 text-start">Your Account</a>
+        <Link to="/myaccount" className="btn w-100 text-start">Your Account</Link>
         <a className="btn w-100 text-start">Your Orders</a>
         <a className="btn w-100 text-start">Your Wishlist</a>
         <a className="btn w-100 text-start">Signout</a>

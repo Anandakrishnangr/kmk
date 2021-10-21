@@ -3,6 +3,7 @@ import logo from './img/logodark.png'
 import './css/signin.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import { Route, Link } from 'react-router-dom'
 
 
 function Signin() {
@@ -11,9 +12,9 @@ function Signin() {
         <div>
             <div className="container mt-4  col-12 col-md-6  col-xl-6">
                 <div className="container mt-2 col-12 col-md-6  col-xl-6">
-                    <center>  <img src={logo}></img></center>
+                <center><Link to="/products" > <img src={logo}></img></Link></center>
                 </div>
-                <div class="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
+                <div className="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
                     Message
                 </div>
                 <div className="container p-4 border col-12 col-md-6 ">
@@ -55,7 +56,7 @@ function Signin() {
                     </div>
                 </div>
                 <div>
-                    <button className="mt-3 btn btn-outline-secondary w-100 ">Create your Account</button>
+                    <Link to="/signup" className="mt-3 btn btn-outline-secondary w-100 ">Create your Account</Link>
                 </div>
                 </div>
 

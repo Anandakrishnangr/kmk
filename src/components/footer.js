@@ -19,19 +19,19 @@ function Footer() {
                     {/* <!-- Right --> */}
                     <div className=" iconrow">
                         <a href="" className="footerico mt-4 text-light me-5">
-                            <i class="fa fa-facebook-f"></i>
+                            <i className="fa fa-facebook-f"></i>
                         </a>
                         <a href="" className="footerico text-light me-5">
-                            <i class="fa fa-twitter"></i>
+                            <i className="fa fa-twitter"></i>
                         </a>
                         <a href="" className=" footerico text-light me-5">
-                            <i class="fa fa-google"></i>
+                            <i className="fa fa-google"></i>
                         </a>
                         <a href="" className=" footerico text-light me-5">
-                            <i class="fa fa-instagram"></i>
+                            <i className="fa fa-instagram"></i>
                         </a>
                         <a href="" className=" footerico text-light me-5">
-                            <i class="fa fa-linkedin"></i>
+                            <i className="fa fa-linkedin"></i>
                         </a>
                         <a href="" className=" footerico text-light me-5">
                             <i className="fa fa-github"></i>

@@ -3,7 +3,7 @@ import logo from './img/logodark.png'
 import './css/signin.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-
+import { Route, Link } from 'react-router-dom'
 
 function Signup() {
 
@@ -11,9 +11,9 @@ function Signup() {
         <div>
             <div className="container mt-4   col-12 col-md-6  col-xl-6">
                 <div className="container mt-2 col-12 col-md-6  col-xl-6">
-                    <center>  <img src={logo}></img></center>
+                    <center><Link to="/products" > <img src={logo}></img></Link></center>
                 </div>
-                {/* <div class="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
+                {/* <div className="col-12 col-md-6 mt-2  p-4 container alert alert-danger" role="alert">
                     Message
                 </div> */}
                 <div className="container p-4 border col-12 col-md-6 card">
@@ -22,24 +22,24 @@ function Signup() {
                         <div>
                             Your name<br></br>
                             <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-danger" aria-hidden="true"></i></span>
+                            <span className="ms-1 h-15"><i className="fa fa-info text-danger" aria-hidden="true"></i></span>
 
                         </div>
                         <div>
                             Email or mobile number<br></br>
                             <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-danger" aria-hidden="true"></i> </span>
+                            <span className="ms-1 h-15"><i className="fa fa-info text-danger" aria-hidden="true"></i> </span>
 
                         </div>
                         <div>
                             Password<br></br>
                             <input className="form-control" placeholder="At least 6 characters" type="text" name="usname"></input>
-                            <span className="ms-1 h-15 text-info"><i class="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
+                            <span className="ms-1 h-15 text-info"><i className="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
                         </div>
                         <div>
                             Password again<br></br>
                             <input className="form-control" type="text" name="usname"></input>
-                            <span className="ms-1 h-15"><i class="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
+                            <span className="ms-1 h-15"><i className="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
 
                         </div>
                         <input className="btn mt-3 btn-warning form-control" value="Continue"></input>
@@ -48,11 +48,11 @@ function Signup() {
                         <hr className="hrr mt-5" />
 
 
-                        Already have an account? <a id="signlink" href="">Sign in </a>
+                        Already have an account? <Link to="/signin" id="signlink" >Sign in </Link>
 
                     </form>
                 </div>
-                <div className="mt-2  container p-4 border col-12 col-md-6">
+                {/* <div className="mt-2  container p-4 border col-12 col-md-6">
 
                     <div className="row ">
                         <div className="col-3 col-xl-4">
@@ -68,7 +68,7 @@ function Signup() {
                     <div>
                         <button className="mt-3 btn btn-outline-secondary w-100 ">Create your Account</button>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

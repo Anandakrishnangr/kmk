@@ -17,7 +17,7 @@ function Theproductview() {
     return (
         <div className="container-fluid  productview">
             <div className="container-fluid row  border bg-dark text-light mx-0">here go the location path</div>
-            <div className="container-fluid row  border bg-primary mx-0 py-4">
+            <div className="container-fluid row  border  mx-0 py-4">
                 <div className="container col-12 col-xl-5 ">
                     <img className="border img-thumbnail thumby" src={img}></img>
                 </div>
@@ -250,7 +250,7 @@ function Theproductview() {
 
             {/* frequent */}
 
-            <div className="container-fluid row  border bg-primary mx-0">
+            <div className="container-fluid row  border  mx-0">
                 <h4>Frequently brought together</h4>
 
                 <div className="row col-6">
