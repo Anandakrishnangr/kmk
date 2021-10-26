@@ -134,6 +134,7 @@ function Searchresult() {
                         </div>
                     </div>
                     </Link>
+                    
                     {/* end */}
                     {/* <hr />
                     <div className="row">

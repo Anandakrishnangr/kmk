@@ -103,7 +103,7 @@ class Header extends Component {
 
         }
         else {
-          main.style.height = "100px";
+          main.style.height = "00px";
           // main.style.backgroundColor="dark";
           navbar.style.display = "none";
           realnavbar.style.display = "block";

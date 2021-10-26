@@ -4,8 +4,67 @@ import './css/signin.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import { Route, Link } from 'react-router-dom'
+import { useState, useEffect } from 'react';
 
 function Signup() {
+
+    const [username, setusername] = useState('')
+    const [email, setemail] = useState('')
+    const [phone, setphone] = useState('')
+    const [pass1, setpass1] = useState('')
+    const [pass2, setpass2] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(pass1)
+    }
+    useEffect(() => {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (pass1) {
+            if (pass1.length > 6) {
+                console.log('password ok')
+            }
+            else {
+                console.log('password not 6')
+                // preventDefault()
+            }
+        }
+
+        if (isNaN(email)) {
+            console.log('email')
+
+            if (email.match(mailformat)) {
+                console.log('valid')
+            }
+            else {
+                console.log('not valid')
+            }
+        }
+        else {
+
+            if (email.length == 10) {
+                console.log("mobile valid")
+            } 
+            else {
+                console.log("mobile invalid")
+
+            }
+        }
+
+
+
+
+
+        if (pass2) {
+            if (pass1 == pass2) {
+                console.log('correct')
+            }
+            else {
+                console.log('incorrect')
+            }
+        }
+
+    })
 
     return (
         <div>
@@ -17,32 +76,32 @@ function Signup() {
                     Message
                 </div> */}
                 <div className="container p-4 border col-12 col-md-6 card">
-                    <form className="justify-content-center w-100">
+                    <form onSubmit={handleSubmit} method="POST" className="justify-content-center w-100">
                         <h3>Create account</h3>
                         <div>
                             Your name<br></br>
-                            <input className="form-control" type="text" name="usname"></input>
+                            <input className="form-control" onChange={(e) => setusername(e.target.value)} type="text" name="usname"></input>
                             <span className="ms-1 h-15"><i className="fa fa-info text-danger" aria-hidden="true"></i></span>
 
                         </div>
                         <div>
                             Email or mobile number<br></br>
-                            <input className="form-control" type="text" name="usname"></input>
+                            <input className="form-control" onChange={(e) => setemail(e.target.value)} type="text" name="email" min="10" max="10"></input>
                             <span className="ms-1 h-15"><i className="fa fa-info text-danger" aria-hidden="true"></i> </span>
 
                         </div>
                         <div>
                             Password<br></br>
-                            <input className="form-control" placeholder="At least 6 characters" type="text" name="usname"></input>
+                            <input className="form-control" onChange={(e) => setpass1(e.target.value)} placeholder="At least 6 characters" type="password" name="pass1"></input>
                             <span className="ms-1 h-15 text-info"><i className="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
                         </div>
                         <div>
                             Password again<br></br>
-                            <input className="form-control" type="text" name="usname"></input>
+                            <input className="form-control" onChange={(e) => setpass2(e.target.value)} type="password" name="pass2"></input>
                             <span className="ms-1 h-15"><i className="fa fa-info text-info" aria-hidden="true"></i> Password must be at least 6 characters.</span>
 
                         </div>
-                        <input className="btn mt-3 btn-warning form-control" value="Continue"></input>
+                        <input type="submit" className="btn mt-3 btn-warning form-control" value="Continue"></input>
                         <p className="mt-2 fs-6"> By creating an account or logging in, you agree to KMK's Conditions of Use and Privacy Policy.</p>
 
                         <hr className="hrr mt-5" />

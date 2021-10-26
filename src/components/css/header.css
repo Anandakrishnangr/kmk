@@ -338,6 +338,7 @@ border-radius: 10px;
   #main {
     transition: margin-left .5s;
     padding: 0px;
+    /* display: none; */
   }
   
   .sidebarminiheading {
