@@ -12,11 +12,15 @@
   #navite{
     margin: auto;
   }
+  
+#Popover1{
+  margin: auto;
+}
   .sidebar {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
   top: 0;
   left: 0;
   background-color: rgb(51, 49, 49);
@@ -248,13 +252,25 @@ border-radius: 10px;
   margin-top: 0px;
   min-width: 1025px;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 90;
   
 }
 
 .mobilefloatnav2{
   display: none;
 }
+
+
+.opo{
+  z-index: 10001;
+  top: 1100px;
+}
+#accpop{
+  width: 300px;
+  background-color: rgb(247, 247, 247);
+  overflow-x: hidden;
+}
+
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
@@ -322,6 +338,7 @@ border-radius: 10px;
   #main {
     transition: margin-left .5s;
     padding: 0px;
+    /* display: none; */
   }
   
   .sidebarminiheading {
@@ -581,6 +598,10 @@ form.examplee button {
   padding: 0;
 }
 #navite{
+  margin-top: 0px;
+  padding: 0px;
+}
+#Popover1{
   margin-top: 0px;
   padding: 0px;
 }

@@ -1,20 +1,40 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import './css/header.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.js';
 import { Nav, Navbar } from 'react-bootstrap'
 import logo from './img/logo.png'
-
 import 'font-awesome/css/font-awesome.min.css';
 import { WindowSidebar } from 'react-bootstrap-icons';
+import {  UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
+import {Link, useHistory} from 'react-router-dom'
+
+
+
+
 class Header extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      result: ''
+      result: '',
+      poper: 0,
 
     }
   }
+
+
+  Popit(val) {
+
+    this.setState({
+      poper: val
+    })
+
+  }
+
+
+
   openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -62,6 +82,7 @@ class Header extends Component {
     // })
 
 
+
     var lastScrolTop = 0;
     var navbar = document.getElementById("mobilefloatnav2");
     var realnavbar = document.getElementById("mobilefloatnav");
@@ -82,7 +103,7 @@ class Header extends Component {
 
         }
         else {
-          main.style.height = "100px";
+          main.style.height = "00px";
           // main.style.backgroundColor="dark";
           navbar.style.display = "none";
           realnavbar.style.display = "block";
@@ -106,7 +127,9 @@ class Header extends Component {
 
 
   render() {
-
+    const toggle = () => this.Popit(!this.state.poper);
+    const opo = "z-index:70001"
+    const mod = "width:400px"
 
     // const inputbox = "max-width:300px";
     return (
@@ -141,11 +164,13 @@ class Header extends Component {
 
             <div id="navbar" className="realnav w-100">
               <Navbar id="navii" className=" navi " bg="dark" variant="dark">
-                <Navbar.Brand id="navite" href="#home" className="navbrandh nav-1 "><img src={logo} alt="logo" height="30px" width="130px"></img></Navbar.Brand>
+                <Navbar.Brand  id="navite"  className="navbrandh nav-1 "><Link to="/products"><img src={logo} alt="logo" height="30px" width="130px"></img></Link></Navbar.Brand>
 
                 <Nav className="w-100 ">
                   <Nav.Link id="navite" href="#home" className="navbrandh nav-2">
-                    Hello user<br /><i className="fa fa-map-marker" aria-hidden="true"></i><div className="line3">Select your address</div>
+                    Hello user<br />
+                    <i className="fa fa-map-marker" aria-hidden="true"></i>
+                    <div className="line3">Select your address</div>
                   </Nav.Link>
                   <Nav.Link id="navite" className="headersearchbox nav-3" href="#home">
                     <form id="theform" className="example" action="/action_page.php" >
@@ -153,17 +178,31 @@ class Header extends Component {
                         <option>All</option>
                       </select>
                       <input type="text" className=" w-6 form-control " placeholder="Search.." name="search2"></input>
-                      <button type="btn submit"><i className="fa fa-search "></i></button>
+                      <button type="btn submit">
+                        <i className="fa fa-search "></i>
+                      </button>
                     </form>
                   </Nav.Link>
-                  <Nav.Link id="navite" className=" nav-4" href="#features"><div className="line1">Hello, Sign in</div><div className="line2">Account & Links</div>
+                  <Nav.Link id="Popover1" className=" nav-4" href="#features">
+
+
+                    <div className="line1">
+                      Hello, Sign in
+                    </div>
+                    <div className="line2">Account & Links</div>
+
 
                   </Nav.Link>
-                  <Nav.Link id="navite" className="nav-5" href="#pricing"><div className="line1">Returns &</div><div className="line2">
 
-                    Orders</div>
+                  <Nav.Link id="navite" className="nav-5" href="#pricing">
+                    <div className="line1">Returns &</div>
+                    <div className="line2">
+
+                      Orders</div>
                   </Nav.Link>
-                  <Nav.Link id="navite" className="nav-6" href="#pricing"><i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>Cart</Nav.Link>
+                  <Nav.Link id="navite" className="nav-6" href="#pricing">
+                    <i className="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>Cart
+                  </Nav.Link>
                 </Nav>
               </Navbar>
             </div>
@@ -227,6 +266,29 @@ class Header extends Component {
           </>
           {/* nav end */}
 
+        </div>
+       
+        <div style={{opo}}>
+        <UncontrolledPopover id="accpop" popperClassName="opo" trigger="legacy hover" placement="bottom" target="Popover1">
+        <PopoverHeader>
+          <div>
+            <Link to='/signin' className="btn btn-warning w-100">Sign in</Link>
+            New customer start <Link to="/signup">here</Link>
+          </div>
+        </PopoverHeader>
+        <PopoverBody >
+      <div id="accpop" className="container ">
+        <div><h6>Your Account</h6> </div>
+        <hr className="mt-1"/>
+        <Link to="/myaccount" className="btn w-100 text-start">Your Account</Link>
+        <a className="btn w-100 text-start">Your Orders</a>
+        <a className="btn w-100 text-start">Your Wishlist</a>
+        <a className="btn w-100 text-start">Signout</a>
+      </div>
+      
+
+         </PopoverBody>
+      </UncontrolledPopover>
         </div>
         <div className="main"></div>
         <div id="s">

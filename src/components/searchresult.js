@@ -1,6 +1,8 @@
 import './css/searchresult.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import img from './img/291-2916845_.png'
+import {Link, useHistory} from 'react-router-dom'
+
 function Searchresult() {
 
 
@@ -58,33 +60,33 @@ function Searchresult() {
                     </div>
                     <h6 className="mt-3 ms-2">Brand</h6>
                     <div className="ms-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label className="form-check-label" for="flexCheckChecked">
                                 MRF
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label className="form-check-label" for="flexCheckChecked">
                                 Castrol
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label className="form-check-label" for="flexCheckChecked">
                                 Servo
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label className="form-check-label" for="flexCheckChecked">
                                 HP
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div className="form-check">
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                            <label className="form-check-label" for="flexCheckChecked">
                                 Motule
                             </label>
                         </div>
@@ -101,6 +103,7 @@ function Searchresult() {
                 </div>
                 <div className="col-xl-10 col-md-10  ">
                     {/* 1 */}
+                    <Link to="/productview?k=iop" id="roy">
                     <div className="row customcard mx-1">
                         <div className="col-xl-3 col-md-4 col-sm-12 imgcontainer">
                             <img className="img-thumbnail " src={img}></img>
@@ -130,6 +133,8 @@ function Searchresult() {
                             </div>
                         </div>
                     </div>
+                    </Link>
+                    
                     {/* end */}
                     {/* <hr />
                     <div className="row">
@@ -172,6 +177,7 @@ function Searchresult() {
                     <hr /> */}
                     {/* 1 */}
                     <hr/>
+                    <Link to="/productview?k=iop" id="roy">
                     <div className="row customcard mx-1">
                         <div className="col-xl-3 col-md-4 col-sm-12 imgcontainer">
                             <img className="img-thumbnail " src={img}></img>
@@ -201,6 +207,7 @@ function Searchresult() {
                             </div>
                         </div>
                     </div>
+                    </Link>
                     {/* end */}
                     <hr />
                     {/* 1 */}
@@ -304,20 +311,20 @@ function Searchresult() {
                     <hr />
                     <div className="row  paginationcustom"><center>
                         <div aria-label="Page navigation example ">
-                            <ul class="pagination d-flex justify-content-center">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                            <ul className="pagination d-flex justify-content-center">
+                                <li className="page-item">
+                                    <a className="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
+                                        <span className="sr-only">Previous</span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                <li className="page-item"><a className="page-link" href="#">1</a></li>
+                                <li className="page-item"><a className="page-link" href="#">2</a></li>
+                                <li className="page-item"><a className="page-link" href="#">3</a></li>
+                                <li className="page-item">
+                                    <a className="page-link" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
+                                        <span className="sr-only">Next</span>
                                     </a>
                                 </li>
                             </ul>

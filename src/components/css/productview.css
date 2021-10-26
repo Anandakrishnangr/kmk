@@ -6,9 +6,9 @@
     position: sticky;
     top:60px;
     padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
-    z-index: 9998;
+    /* background-color: #cae8ca; */
+    /* border: 2px solid #4CAF50; */
+    z-index: 70;
     
   }
 
@@ -109,3 +109,7 @@ background-color: brown;
 } */
 
 
+.head{
+    word-break: keep-all;
+    word-wrap: break-word;
+}
