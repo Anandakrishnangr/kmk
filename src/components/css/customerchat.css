@@ -1,0 +1,122 @@
+.chatprofile {
+    width: 100%;
+    height: 75x;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 2.5px;
+    margin-left: 2.5px;
+}
+
+.times {
+    font-size: 12px;
+}
+
+.message {
+    padding-left: 10px;
+    padding-right: 3px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.rightbox {
+    height: 75px;
+}
+
+.names {
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+.avatarcontainer {
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    margin-top: 10px;
+}
+
+.chattop {
+    padding: 10px;
+    height: 50px;
+    background-color: bisque;
+}
+
+.recenttop {
+    height: 50px;
+    font-weight: 500;
+    background-color: blanchedalmond;
+    padding-top: 12px;
+}
+
+.chatrightname {
+    font-weight: 500;
+}
+
+.chatspacer {
+    height: 80vh;
+}
+
+.chatground {
+    height: 75vh;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+
+.chatinp {
+    padding-right: 100px;
+    margin-right: -100px;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+}
+
+.chatsend {
+    height: 49px;
+    width: 100px;
+}
+
+.frommes {
+    width: fit-content;
+    text-align: left;
+    border-radius: 15px;
+    padding-left: 15px;
+    max-width: 85%;
+    word-break: break-all;
+}
+
+.tomes {
+    border-radius: 15px;
+    width: fit-content;
+    text-align: left;
+    max-width: 85%;
+}
+
+.tileschat {
+    overflow-y: scroll;
+    height: 80vh;
+    border: solid black 1px;
+}
+
+.fcont {
+    display: block;
+    
+}
+
+.bcont {
+    display: block;
+    
+}
+.chatlink{
+    text-decoration: none;
+    color: inherit;
+}
+.chatlink:hover{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}

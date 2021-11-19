@@ -44,17 +44,12 @@ function Signup() {
 
             if (email.length == 10) {
                 console.log("mobile valid")
-            } 
+            }
             else {
                 console.log("mobile invalid")
 
             }
         }
-
-
-
-
-
         if (pass2) {
             if (pass1 == pass2) {
                 console.log('correct')
@@ -76,7 +71,7 @@ function Signup() {
                     Message
                 </div> */}
                 <div className="container p-4 border col-12 col-md-6 card">
-                    <form onSubmit={handleSubmit} method="POST" className="justify-content-center w-100">
+                    <form method="POST" action="../../Useraccount/signup" className="justify-content-center w-100">
                         <h3>Create account</h3>
                         <div>
                             Your name<br></br>

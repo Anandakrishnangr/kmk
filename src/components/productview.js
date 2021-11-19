@@ -18,11 +18,11 @@ function Theproductview() {
         <div className="container-fluid  productview">
             <div className="container-fluid row  border bg-dark text-light mx-0">here go the location path</div>
             <div className="container-fluid row  border  mx-0 py-4">
-                <div className="container col-12 col-xl-5 ">
+                <div className="container col-12 col-md-4 col-xl-5 ">
                     <img className="border img-thumbnail thumby" src={img}></img>
                 </div>
 
-                <div className="container col-12 col-xl-5 py-4">
+                <div className="container col-12 col-md-4  col-xl-5 py-4">
                     <h4 className="head">
                         Lenovo IdeaPad Gaming 3 AMD Ryzen 5 4600H 15.6" (39.63cm) FHD IPS Gaming Laptop
                         (8GB/512GB SSD/Windows10/NVIDIA GTX 1650 4GB/120Hz Refresh Display/Onyx Black/2.2Kg),
@@ -205,7 +205,7 @@ function Theproductview() {
 
                 {/*  3rd col */}
 
-                <div className="container  gx-5  col-12 col-xl-2 border py-4">
+                <div className="container  gx-5  col-12 col-md-4 col-xl-2 border py-4">
 
                     {/* offer */}
 

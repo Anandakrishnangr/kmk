@@ -18,12 +18,12 @@ function Signin() {
                     Message
                 </div>
                 <div className="container p-4 border col-12 col-md-6 ">
-                    <form className="justify-content-center w-100">
+                    <form method="post" action="../../post" className="justify-content-center w-100">
                         <h3>Sign In</h3>
                         Email or mobile phone number<br></br>
                         <input className="form-control" type="text" name="usname"></input>
 
-                        <input className="btn mt-2 btn-warning form-control" value="Continue"></input>
+                        <input className="btn mt-2 btn-warning form-control" type="submit" value="Continue"></input>
                         <p className="mt-2"> By continuing, you agree to Kmk's Conditions of Use and Privacy Notice.</p>
 
                         <p>

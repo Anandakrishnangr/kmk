@@ -1,0 +1,69 @@
+.admindashcontainer {
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    width: 100%;
+    position: fixed;
+}
+
+.dash-sidebar {
+    position: fixed;
+    /* margin-top: 83px; */
+    display: inline;
+    width: 0px;
+    height: 100vh;
+    /* padding-left:20px; */
+    padding-top: 20px;
+    border: 1px solid black;
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.dash-sidebar a {
+    height: 40px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#navv {
+    transition: 1s;
+}
+
+#bt1 {
+    background-color: rgba(255, 235, 205, 0);
+    border: none;
+    font-size: 22px;
+    position: fixed;
+    top: 50;
+    left: 50;
+}
+
+#bt2 {
+    background-color: rgba(255, 235, 205, 0);
+    border: none;
+    font-size: 22px;
+    transition: 3s;
+    overflow-x: hidden;
+    width: 40px;
+}
+
+.headp {
+   
+    overflow: hidden;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+#dash {
+    padding: 0%;
+   
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.sidelinkerr:hover {
+    /* transition: 1s; */
+    box-shadow: 2px 8px 16px 0 rgba(52, 207, 228, 0.2);
+    overflow: hidden;
+    display: block;
+  }

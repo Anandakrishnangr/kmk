@@ -1,115 +1,93 @@
-
-
 @media only screen and (min-device-width: 1025px) {
     .openbtns {
-    font-size: 13px;
-    cursor: pointer;
-    color: black;
-    padding: 10px 15px;
-    border: none;
+        font-size: 13px;
+        cursor: pointer;
+        color: black;
+        padding: 10px 15px;
+        border: none;
+    }
+    .openbtns:hover {
+        background-color: rgb(27, 26, 26);
+        color: white;
+    }
+    #sps {
+        position: fixed;
+        width: 300px;
+        background-color: rgb(0, 0, 0);
+        z-index: 130;
+        bottom: 0;
+        right: 0;
+    }
+    .chatheader {
+        height: 40px;
+    }
+    .chatspace {
+        background-color: rgb(0, 0, 0);
+        padding: 5px;
+        overflow-y: scroll;
+    }
+    /*  */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+    /*  */
+    .chatpop {
+        height: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0px;
+        /* display: none; */
+        transition: 0.5s;
+    }
+    .chatpoped {
+        height: 400px;
+        transition: 0.5s;
+        padding: 5px;
+    }
+    .chatfrom {
+        background-color: white;
+        width: fit-content;
+        height: fit-content;
+        max-width: 250px;
+        text-align: right;
+        word-break: keep-all;
+        word-wrap: break-word;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .chatto {
+        background-color: white;
+        width: fit-content;
+        height: fit-content;
+        max-width: 250px;
+        text-align: right;
+        word-break: keep-all;
+        word-wrap: break-word; 
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .chatheadername {
+        margin-left: 110px;
+    }
+    .chatinput {
+        text-align: right;
+    }
 }
-
-.openbtns:hover {
-    background-color: rgb(27, 26, 26);
-    color: white;
-}
-
-#sps {
-    position: fixed;
-    width: 300px;
-    background-color: aqua;
-    z-index: 130;
-    bottom: 0;
-    right: 0;
-}
-
-.chatheader {
-    height: 40px;
-}
-
-.chatspace {
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    overflow-y: scroll;
-}
-
-/*  */
-
-/* width */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: red;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-}
-
-/*  */
-
-.chatpop {
-    height: 0px;
-    bottom: 0;
-    right: 0;
-    padding: 0px;
-    /* display: none; */
-    transition: 0.5s;
-}
-
-.chatpoped {
-    height: 400px;
-    transition: 0.5s;
-    padding: 5px;
-}
-
-.chatfrom {
-    background-color: white;
-    width: fit-content;
-    height: fit-content;
-    max-width: 250px;
-    text-align: right;
-    word-break: keep-all;
-    word-wrap: break-word;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.chatto {
-    background-color: white;
-    width: fit-content;
-    height: fit-content;
-    max-width: 250px;
-    text-align: right;
-    word-break: keep-all;
-    word-wrap: break-word;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.chatheadername {
-    margin-left: 110px;
-}
-.chatinput{
-    text-align: right;
-}
-}
-
 
 @media only screen and (max-width:450px) {
     .openbtns {
@@ -119,12 +97,10 @@
         padding: 10px 15px;
         border: none;
     }
-    
     .openbtns:hover {
         background-color: rgb(27, 26, 26);
         color: white;
     }
-    
     #sps {
         position: fixed;
         width: 100%;
@@ -133,47 +109,34 @@
         bottom: 0;
         right: 0;
     }
-    
     .chatheader {
         height: 40px;
     }
-    
     .chatspace {
         background-color: rgb(0, 0, 0);
         padding: 5px;
         overflow-y: scroll;
     }
-    
     /*  */
-    
     /* width */
-    
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
     /* Track */
-    
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
         border-radius: 10px;
     }
-    
     /* Handle */
-    
     ::-webkit-scrollbar-thumb {
         background: red;
         border-radius: 10px;
     }
-    
     /* Handle on hover */
-    
     ::-webkit-scrollbar-thumb:hover {
         background: #b30000;
     }
-    
     /*  */
-    
     .chatpop {
         height: 0px;
         bottom: 0;
@@ -182,13 +145,11 @@
         /* display: none; */
         transition: 0.5s;
     }
-    
     .chatpoped {
         height: 100vh;
         transition: 0.5s;
         padding: 5px;
     }
-    
     .chatfrom {
         background-color: white;
         width: fit-content;
@@ -200,7 +161,6 @@
         padding: 5px;
         border-radius: 10px;
     }
-    
     .chatto {
         background-color: white;
         width: fit-content;
@@ -212,16 +172,11 @@
         padding: 5px;
         border-radius: 10px;
     }
-    
     .chatheadername {
         margin-left: 110px;
     }
-    
-    }
-    
+}
 
-
-    
 @media only screen and (min-device-width: 450px) and (max-device-width: 1024px) {
     .openbtns {
         font-size: 13px;
@@ -230,12 +185,10 @@
         padding: 10px 15px;
         border: none;
     }
-    
     .openbtns:hover {
         background-color: rgb(27, 26, 26);
         color: white;
     }
-    
     #sps {
         position: fixed;
         width: 300px;
@@ -244,47 +197,34 @@
         bottom: 0;
         right: 0;
     }
-    
     .chatheader {
         height: 40px;
     }
-    
     .chatspace {
         background-color: rgb(0, 0, 0);
         padding: 5px;
         overflow-y: scroll;
     }
-    
     /*  */
-    
     /* width */
-    
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
     /* Track */
-    
     ::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
         border-radius: 10px;
     }
-    
     /* Handle */
-    
     ::-webkit-scrollbar-thumb {
         background: red;
         border-radius: 10px;
     }
-    
     /* Handle on hover */
-    
     ::-webkit-scrollbar-thumb:hover {
         background: #b30000;
     }
-    
     /*  */
-    
     .chatpop {
         height: 0px;
         bottom: 0;
@@ -293,13 +233,11 @@
         /* display: none; */
         transition: 0.5s;
     }
-    
     .chatpoped {
         height: 400px;
         transition: 0.5s;
         padding: 5px;
     }
-    
     .chatfrom {
         background-color: white;
         width: fit-content;
@@ -311,7 +249,6 @@
         padding: 5px;
         border-radius: 10px;
     }
-    
     .chatto {
         background-color: white;
         width: fit-content;
@@ -323,25 +260,57 @@
         padding: 5px;
         border-radius: 10px;
     }
-    
     .chatheadername {
         margin-left: 110px;
     }
-    .chatinput{
+    .chatinput {
         text-align: right;
-    }}
+    }
+}
 
-
-
-    
-.searchbox{
+.searchbox {
+    text-align: right;
     width: 200px;
     height: 40px;
     padding-right: 60px;
-  }
-  
-  .searchbtn {
+    box-shadow: 1px;
+}
+
+.searchbox:focus {
+    background-color: yellow;
+    text-align: right;
+    width: 200px;
+    height: 40px;
+    box-shadow: 1px;
+    border: 0;
+    outline: 'none';
+}
+
+.searchbtn {
+    background-color: rgb(8, 253, 8);
+    text-align: center;
+    color: white;
     margin-left: -60px;
     height: 40px;
     width: 60px;
-  }
+    border: rgba(127, 255, 212, 0);
+    border-radius: 4px;
+}
+
+.hideit {
+    display: none;
+}
+
+.shotit {
+    display: block;
+}
+.frmchat{
+    overflow: hidden;
+    height: 0px;
+    transition: 1s;
+}
+.frmchat2{
+    height: 40px;
+    transition: 1s;
+}
+

@@ -1,0 +1,31 @@
+.linker{
+    position: fixed;
+    width: 0px;
+    /* height: 0px; */
+    top:0px;
+    right: 0px;
+    padding: 0px;
+  overflow-x: hidden;
+    transition: 0.5s;
+}
+.linkeropen {
+    display: block;
+    width: 400px;
+    float: right;
+    transition: 0.5s;
+    padding: 5px;
+    overflow: hidden;
+    z-index: 15000;
+}
+
+.bit{
+    width: 0px;
+}
+.tyro{
+    position: fixed;
+    top: 500px;
+    z-index: 99299;
+    width: 100px;
+    
+}
+

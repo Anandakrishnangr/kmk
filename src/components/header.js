@@ -83,7 +83,7 @@ class Header extends Component {
 
 
 
-    var lastScrolTop = 0;
+    var lastScrolTop = 90;
     var navbar = document.getElementById("mobilefloatnav2");
     var realnavbar = document.getElementById("mobilefloatnav");
     var mainid = document.getElementById("mainid");
@@ -91,9 +91,10 @@ class Header extends Component {
     window.addEventListener("scroll", function () {
 
       if (window.innerWidth < 480) {
+        // document.getElementsByClassName('main').style.height='55px'
+
         var scrollTop = window.pageYoffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrolTop) {
-
           navbar.style.display = "block";
           realnavbar.style.display = "none";
           navbar.style.top = "0px";
@@ -103,7 +104,8 @@ class Header extends Component {
 
         }
         else {
-          main.style.height = "00px";
+
+          main.style.height = "100px";
           // main.style.backgroundColor="dark";
           navbar.style.display = "none";
           realnavbar.style.display = "block";
